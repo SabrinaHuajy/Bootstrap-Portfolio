@@ -3,122 +3,223 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sabrina Jingyu Hua // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://kit.fontawesome.com/a030d70bdd.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header class="header">
-    <h1 id="pageHeader">Sabrina Jingyu Hua</h1>
-    <nav>
-      <ul style="width:500px">
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-        <li>
-          <a href="#work">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/sabrinahuajy/">Resume</a>
-        </li>
-      </ul>
-    </nav>
+
+  <div class="dropdown">
+    <button class="btn" style="background-color: lightblue; vertical-align: middle;"><i class="fa fa-bars"
+        style="line-height: 30px;"></i></button>
+    <div class="dropdown-content">
+      <a rel="nav-link" href="#about">About</a>
+      <a rel="nav-linkr" href="#work">Work</a>
+      <a rel="nav-link" href="#contact">Contact Me</a>
+      <a rel="nav-link"
+        href="https://drive.google.com/file/d/15sKcUqhx0nkwJyto4HDnKZxTa6VS3X_n/view?usp=sharing">Resume</a>
+
+    </div>
+  </div>
 
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner" alt="Image of decorative banner">
+  <div class="jumbotron" id="about">
+    <section class="hero-banner" alt="Image of decorative banner">
+      <h1 class="display-4">Sabrina Jingyu Hua</h1>
+      <h4 class="lead">Chinese girl who enjoys life science and coding</h4>
+      <hr class="my-4">
+      <p class="start-text">Front-end development rookie</p>
+      <p class="lead1">
+        <a class="btn btn-primary btn-lg btn-outline-light" href="#work" role="button">Click for more</a>
+      </p>
+    </section>
+  </div>
 
-    <div>
-      <h2>Chinese girl who enjoy life science and coding</h2>
-    </div>
-  </section>
+  <!-- <div>
+    <img class="recent-photo"
+      src="https://globalgamejam.org/sites/default/files/styles/user_profile_picture_large__wide/public/user/wechat_image_20201029175553.jpg?itok=oNcGE2cx&timestamp=1604165492"
+      alt="image of Sabrina">
+  </div>
+  </section> -->
 
   <!-- <main class="page-wrapper"> -->
   <!-- about me -->
   <section id="aboutsection">
-    <aside class="page-section" id="about">
-      <h2>About Me</h2>
-    </aside>
-    <div id="aboutborder">
+    <div class="flex-container">
+    </div>
+    <h2>About Me</h2>
+    <div class="content-section" id="aboutborder">
 
       <p>I am a Biology student from the University of York whose life depends on the prosperity of rapeseeds. Coming
         from a bioinformatics background I've realised how much powerful advancements and revolution tech has brought
-        into life science research and the life of human-being in general. I found my creativity was largely inspired by
-        the coding process and it really allowed me to exhibit many skills I adopted from my studies. I have previously
-        had some experiences with analytical libraries such as Pandas, NumPy, Matplotlib for processing biological data.
+        into life science research and the life of human-being in general. I found my creativity was largely inspired
+        by
+        the coding process and it really allowed me to exhibit many skills I adopted from my studies. I have
+        previously
+        had some experiences with analytical libraries such as Pandas, NumPy, Matplotlib for processing biological
+        data.
         Scientific data processes for life sciences that requires a lot of normalization.Machine learning, predictive
         modelling and algorithms for plant genomics that assist with molecular marker assistant breeding of polyploid
         plants/crops and metabolites analysis. Nevertheless I'm a complete rookie in web developement but I'm thrilled
         to become better at it.</p>
 
-      <img class="recent-photo"
-        src="https://globalgamejam.org/sites/default/files/styles/user_profile_picture_large__wide/public/user/wechat_image_20201029175553.jpg?itok=oNcGE2cx&timestamp=1604165492"
-        alt="image of Sabrina">
+
     </div>
   </section>
 
   <!-- portfolio container -->
-  <section>
-    <aside class="page-section">
-      <h2>Work</h2>
-    </aside>
-    <div id="workborder">
-
-      <article id="work">
-        <div id="SurfReport">
-          <div class="heading"> <b>Surf Report</b> <br> MERN Stack</div>
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Work</h2>
+    <div class="card-deck">
+      <div class="card">
+        <img src="https://github.com/akinbusuyi/Make-your-meal/raw/main/assets/lmages/frontpage.png"
+          class="card-img-top" alt="Make-your-meal project">
+        <div class="card-body">
+          <h5 class="card-title">Make your meal APP</h5>
+          <p class="card-text">About
+            A page where you can use an ingredient to create search for a meal recipe!
+            <br>
+            The WebApp use client-side storage to store persistent data. It is deployed to GitHub Pages, at the same
+            time being responsive and interactive, which means it accept and respond to user input. It has two
+            interfaces. The initial interface allows you to type in keywords and explore different meal options.
+            Sequencially when the pictures of the meals are clicked the user would be redirected to the second interface
+            with detailed recipe in english, a translation in French is also available.
+          </p>
         </div>
-
-        <div id="LEDWall">
-          <div class="heading"> <b>LED Wall</b> <br> Node/IoT </div>
+        <div class="card-footer">
+          <a href="https://akinbusuyi.github.io/Make-your-meal/" target="_blank">Visit my GitHub</a>
         </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://github.com/SabrinaHuajy/SabrinaHuajy-Password-Generator/raw/main/assets/images/password_generator.PNG"
+          class="card-img-top" alt="Password Generator">
+        <div class="card-body">
+          <h5 class="card-title">Password Generator</h5>
+          <p class="card-text">An application that an employee can use to generate a random password based on criteria
+            they have selected.
 
-        <div id="Calculator">
-          <div class="heading"> <b>Calculator</b> <br> React/JavaScript/CSS </div>
-        </div>
+            This Password Generator has been generated as a fun Intermediate JavaScript challenge.
 
-        <div id="PastelPuzzels">
-          <div class="heading"> <b>Pastel Puzzels</b> <br> MERN Stack </div>
+            This app was created to run in the browser and feature dynamically updated HTML and CSS, all powered by
+            JavaScript code that I wrote. My app has a relatively clean and polished user interface that is responsive,
+            ensuring that itself adapts to multiple screen sizes.
+          </p>
         </div>
+        <div class="card-footer">
+          <a href="https://sabrinahuajy.github.io/SabrinaHuajy-Password-Generator/" target="_blank">Visit my
+            GitHub</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://github.com/SabrinaHuajy/SabrinaHuajy-Console-Finances/raw/main/assets/images/browser.PNG"
+          class="card-img-top" alt="Console Finances">
+        <div class="card-body">
+          <h5 class="card-title">Console Finances</h5>
+          <p class="card-text">JavaScript code that analyzes the records to calculate different tasks.
+            JavaScript code that analyses the financial records of a company to calculate each of the following tasks
+            using a dataset composed of arrays with two fields: Date and Profit/Losses.
 
-        <div id="RunBuddy">
-          <div class="heading"> <b>Run Buddy</b> <br> HTML/CSS </div>
+            The tasks are:
+
+            The total number of months included in the dataset.
+
+            The net total amount of Profit/Losses over the entire period.
+
+            The average of the changes in Profit/Losses over the entire period, by tracking what the total change in
+            profits are from month to month to gain the average data as in (Total/Number of months).
+
+            The greatest increase in profits (date and amount) over the entire period.
+
+            The greatest decrease in losses (date and amount) over the entire period.
+          </p>
         </div>
-      </article>
+        <div class="card-footer">
+          <a href="https://sabrinahuajy.github.io/SabrinaHuajy-Console-Finances/" target="_blank">Visit my
+            GitHub</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://github.com/SabrinaHuajy/SabrinaHuajy-Horiseon-Website/raw/main/assets/images/screenshot1.PNG" class="card-img-top" alt="Horiseon Website">
+        <div class="card-body">
+          <h5 class="card-title">Horiseon Website</h5>
+          <p class="card-text">This website is created for the marketing purpose of the Horiseon company, it is designed to optimise for search engines.
+
+            This website is created for the marketing purpose of the Horiseon company, it is designed to optimise for search engines. In order to achieve this, the codebase of this website follows accessibility standards.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="https://sabrinahuajy.github.io/SabrinaHuajy-Horiseon-Website/" target="_blank">Visit my GitHub</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- </main> -->
-
+  <!-- Skill Section -->
+  <section id="skills">
+    <h2 class="skill-header">Skills</h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">HTML</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">CSS</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Git</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Javascript</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- contact -->
-  <section>
+  <section id="content-section">
     <aside class="page-section contact" id="contact">
       <h2>Contact Me</h2>
     </aside>
 
 
-    <article id="contactlinks">
-      <div>
-        <a href="https://www.linkedin.com/in/sabrinahuajy/">Portofolio</a>
-      </div>
-      <a href="mailto:j.hua@york.ac.uk">Email</a>
-      <div>
-        <a href="https://github.com/SabrinaHuajy">Github</a>
-      </div>
-      <div>
-        <a href="https://twitter.com/hua_jingyu">Twitter</a>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/sabrinahuajy/">LinkedIn</a>
-      </div>
-    </article>
+    <ul class="content-section" id="contactlinks">
+      <li><a href="mailto:j.hua@york.ac.uk">Email</a></li>
+
+      <li><a href="https://github.com/SabrinaHuajy">Github</a></li>
+
+      <li><a href="https://twitter.com/hua_jingyu">Twitter</a></li>
+
+      <li><a href="https://www.linkedin.com/in/sabrinahuajy/">LinkedIn</a></li>
+    </ul>
+
   </section>
 
 </body>

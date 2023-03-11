@@ -1,7 +1,3 @@
-.selector-for-some-widget {
-  box-sizing: content-box;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -28,7 +24,29 @@ p {
   margin: 0px 8%;
 }
 
-/* Website header and navigation bar */
+/* Website header and navigation bar
+
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+.navbar-brand {
+  font-size: 25px;
+  font-family: 'Optima', sans-serif;
+  color: black;
+}
+/* Added space between the different items within the navbar and to help center with the jumbotron h1*/
+/* .navbar-nav .nav-link {
+  font-family: 'Optima', sans-serif;
+}
+/* Included underlining navbar when aspect hovered over */
+/* .nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-item{
+  margin-left:50px;
+} */ 
 
 #pageHeader {
   background-color: skyblue;
@@ -64,6 +82,72 @@ p {
   margin-left: 25px;
 }
 
+table,
+th,
+td {
+  border: 1px solid lightblue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: lightblue;
+  color: white;
+  height: 70px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+.highlight {
+  background-color: darkslategray;
+  color: white;
+}
+
+.highlight p {
+  background-color: lightblue;
+  color: black;
+}
+
+/* Style dropdown menu */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 300%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: lightblue;
+  padding: 1px;
+  text-align: center;
+  background-color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: slategray;
+}
+
 #aboutsection {
   margin-bottom: 100px;
   float: right;
@@ -74,22 +158,23 @@ p {
   padding-left: 100px;
 }
 
-#aboutborder {
-  border-left: 3px solid darkslategray;
-}
 
 /* hero image */
 .recent-photo {
   height: 200px;
   /* display: flex; */
-  float: right;
+  /* float: right; */
 }
 
 .hero-banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   height: 200px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("/assets/images/02-hero-bg.jpg");
+  background-image: url("../../assets/images/02-hero-bg.jpg");
   background-size: cover;
   background-position: center;
   /* background-color: #003780a1; */
@@ -97,20 +182,21 @@ p {
 }
 
 .hero-banner div {
-  background-color: rgba(7, 83, 248, 0.26);
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .hero-banner div h2 {
-  display: inline-block;
+  /* display: inline-block; */
   background-color: skyblue;
   color: darkslategray;
   padding-left: 1%;
   padding-right: 1%;
-  position: relative;
+
+  /* vertical-align: middle; */
+  /* position: relative;
   left: 56%;
-  top: 70%;
+  top: 70%; */
 }
 
 .h2 {
@@ -119,11 +205,11 @@ p {
   text-align: float-left;
 }
 
+
 /* Category Grid CSS */
 
 #work {
-  opacity: 0.6;
-  border-left: 3px solid darkslategray;
+  /* border-left: 3px solid darkslategray; */
   padding-right: 100px;
   display: grid;
   grid-template-rows: 70% 70% 70% 70%;
@@ -137,45 +223,66 @@ p {
   ;
 }
 
-#work:hover {
-  opacity: 1.0;
+#SurfReport:hover {
+  opacity: 1;
 }
 
 #SurfReport {
+  opacity: 0.6;
   grid-area: SurfReport;
-  background-image: url("/assets/images/02-portfolio-4.jpg");
+  background-image: url("../../assets/images/02-portfolio-4.jpg");
   background-size: cover;
   background-position: top;
   border: 5px solid lightblue;
+}
+
+#LEDWall:hover {
+  opacity: 1;
 }
 
 #LEDWall {
+  opacity: 0.6;
   grid-area: LEDWall;
-  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-image: url("../../assets/images/02-portfolio-1.jpg");
   background-size: cover;
   background-position: top;
   border: 5px solid lightblue;
+}
+
+#Calculator:hover {
+  opacity: 1;
 }
 
 #Calculator {
+  opacity: 0.6;
   grid-area: Calculator;
-  background-image: url("/assets/images/02-portfolio-2.jpg");
+  background-image: url("../../assets/images/02-portfolio-2.jpg");
   background-size: cover;
   background-position: top;
   border: 5px solid lightblue;
+}
+
+#PastelPuzzels:hover {
+  opacity: 1;
 }
 
 #PastelPuzzels {
+  opacity: 0.6;
   grid-area: PastelPuzzels;
-  background-image: url("/assets/images/02-portfolio-3.jpg");
+  background-image: url("../../assets/images/02-portfolio-3.jpg");
   background-size: cover;
   background-position: top;
   border: 5px solid lightblue;
 }
 
+#RunBuddy:hover {
+  opacity: 1;
+}
+
 #RunBuddy {
+  opacity: 0.6;
   grid-area: RunBuddy;
-  background-image: url("/assets/images/02-run-buddy.jpg");
+  background-image: url("../../assets/images/02-run-buddy.jpg");
   background-size: cover;
   background-position: top;
   border: 5px solid lightblue;
@@ -201,14 +308,30 @@ p {
   width: 20%;
   height: 100%;
   color: darkslategray;
+  /* border-left: 3px solid darkslategray; */
+
 }
+
+.work-section {
+  border-right: 3px solid darkslategray;
+  height: 730px;
+  margin-right: 20px;
+  padding: 20px 10px;
+
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+}
+
 
 #contactlinks {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 600px;
-  border-left: 3px solid darkslategray;
+  /* border-left: 3px solid darkslategray; */
   /* position: fixed; */
   /* bottom: 0;  */
 }
@@ -220,6 +343,10 @@ p {
 }
 
 /* #contact {
-    position: fixed;
-    bottom: 0; 
-  } */
+  position: fixed;
+  bottom: 0; 
+} */
+
+/* .content-section {
+  border-right: 3px solid darkslategray;
+} */

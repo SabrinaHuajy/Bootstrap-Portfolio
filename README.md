@@ -1,4 +1,4 @@
-# SabrinaHuajy-Bootstrap-Portfolio
+# SabrinaHuajy-Portfolio
 
 A portfolio of work to showcase my skills and talents to employers looking to fill a part-time or full-time position. 
 
@@ -9,6 +9,12 @@ With these points in mind, in this Challenge I’ll set myself up for future suc
 Link to my portfolio Website - https://sabrinahuajy.github.io/SabrinaHuajy-Portfolio
 
 The following animation illustrates the website's appearance and functionality:
+<br>
+
+<img src="assets\images\screenshot1.PNG" alt="first screenshot of webpage interface">
+<img src="assets\images\screenshot2.PNG" alt="second screenshot of webpage interface">
+<img src="assets\images\screenshot3.PNG" alt="third screenshot of webpage interface">
+
 
 
 I aim to fulfill the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
