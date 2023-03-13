@@ -6,7 +6,7 @@ I am trying to construct an effective portfolio highlights my strongest work as 
 
 With these points in mind, in this Challenge I’ll set myself up for future success by applying the core skills I've recently learned: flexbox, media queries, and CSS variables. I'll get to practice my new skills while creating something that I will use during my job search. It’s a win-win that I'll likely be grateful for in the future!
 
-Link to my portfolio Website - https://sabrinahuajy.github.io/SabrinaHuajy-Portfolio
+Link to my portfolio Website - https://sabrinahuajy.github.io/SabrinaHuajy-Bootstrap-Portfolio
 
 The following animation illustrates the website's appearance and functionality:
 <br>
