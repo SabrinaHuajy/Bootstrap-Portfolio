@@ -24,30 +24,6 @@ p {
   margin: 0px 8%;
 }
 
-/* Website header and navigation bar
-
-.navbar {
-  position: absolute;
-  width: 100%;
-}
-.navbar-brand {
-  font-size: 25px;
-  font-family: 'Optima', sans-serif;
-  color: black;
-}
-/* Added space between the different items within the navbar and to help center with the jumbotron h1*/
-/* .navbar-nav .nav-link {
-  font-family: 'Optima', sans-serif;
-}
-/* Included underlining navbar when aspect hovered over */
-/* .nav-link:hover {
-  text-decoration: underline;
-}
-
-.nav-item{
-  margin-left:50px;
-} */ 
-
 #pageHeader {
   background-color: skyblue;
   color: darkslategray;
@@ -116,7 +92,6 @@ td {
   color: black;
 }
 
-/* Style dropdown menu */
 .dropdown {
   display: inline-block;
   position: relative;
