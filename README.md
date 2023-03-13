@@ -19,11 +19,13 @@ The following animation illustrates the website's appearance and functionality:
 
 I aim to fulfill the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
-When the page is loaded the page presents my name, a recent photo or avatar, and links to sections about me, my work, and how to contact me.
+When the page is loaded the page presents my name, links to sections about me, my work, and how to contact me.
 
-When one of the links in the navigation is clicked then the UI scrolls to the corresponding section.
+When one of the links in the navigation bar is clicked then the UI scrolls to the corresponding section.
 
 When viewing the section about my work then the section contains titled images of my applications.
+
+A jumbotron featuring your picture, your name, and any other information you'd like to include.
 
 When presented with the my first application then that application's image should be larger in size than the others.
 
