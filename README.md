@@ -32,3 +32,4 @@ When presented with the my first application then that application's image shoul
 When images of the applications are clicked then the user is taken to that deployed application.
 
 When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport.
+
