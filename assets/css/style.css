@@ -2,12 +2,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -177,7 +178,7 @@ td {
 .h2 {
   background-color: skyblue;
   color: darkslategray;
-  text-align: float-left;
+  /* text-align: float-left; */
 }
 
 .heading {
@@ -204,14 +205,6 @@ td {
 
 }
 
-.work-section {
-  border-right: 3px solid darkslategray;
-  height: 730px;
-  margin-right: 20px;
-  padding: 20px 10px;
-
-}
-
 #contact {
   display: flex;
   align-items: center;
@@ -221,24 +214,41 @@ td {
 #contactlinks {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin-top: 60px;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 0;
+  /* margin-top: 60px; */
   /* border-left: 3px solid darkslategray; */
   /* position: fixed; */
   /* bottom: 0;  */
 }
 
+#contactlinks li {
+  margin: 0 25px;
+}
+
 
 #contactsection {
-  float: right;
+  /* float: right; */
   display: flex;
 }
 
-/* #contact {
-  position: fixed;
-  bottom: 0; 
-} */
+#skills,
+#projects,
+/* #contact-content, */
+#aboutsection {
+  margin: 0 5%;
+}
 
-/* .content-section {
-  border-right: 3px solid darkslategray;
-} */
+#aboutborder {
+  display: flex;
+}
+
+#contact-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: rgb(40, 56, 204);
+  padding: 5px 5% 0 5%;
+  align-items: center;
+}

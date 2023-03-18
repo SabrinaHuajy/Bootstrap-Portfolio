@@ -8,7 +8,7 @@ With these points in mind, in this Challenge I’ll set myself up for future suc
 
 Link to my portfolio Website - https://sabrinahuajy.github.io/SabrinaHuajy-Bootstrap-Portfolio
 
-The following images illustrate the website's appearance and functionality:
+The following animation illustrates the website's appearance and functionality:
 <br>
 
 <img src="assets\images\screenshot1.PNG" alt="first screenshot of webpage interface">
